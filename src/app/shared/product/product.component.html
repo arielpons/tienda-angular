@@ -1,0 +1,32 @@
+<div class="maindiv">
+    <div class="table-header">
+        <h2>Productos</h2>
+        <button mat-raised-button class="btn-product product">Nuevo Producto</button>
+    </div>
+<div class="product">
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Subcategoría</th>
+      <th>Marca</th>
+      <th>Disponibilidad</th>
+      <th>Estado</th>
+      <th>Destacado</th>
+    </tr>
+    <tr *ngFor= "let product of products">
+      <td >{{ product.id }}</td>
+      <td >{{ product.nombre }}</td>
+      <td >{{ product.precio }}</td>
+      <td >{{ product.subcategoria }}</td>
+      <td >{{ product.marca }}</td>
+      <td >{{ product.disponibilidad }}</td>
+      <td >{{ product.estado }}</td>
+      <td >{{ product.destacado }}
+        <i class="fas fa-ellipsis-v"></i>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>

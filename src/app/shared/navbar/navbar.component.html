@@ -1,23 +1,42 @@
 <nav class="navbar navbar-expand navbar">
     <div class="container-fluid">
         <a class="navbar-brand">
-            <img src="./assets/img/wantfrom.jpg" width="50" height="50" alt="">
+            <img src="./assets/img/wantfrom.jpg" width="50" height="50" alt="logo">
         </a>
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Categorias</a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav-wrapper navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Categorías</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ofertas</a>
                     </li>
-                    <div class="col-12 d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+
+                    <div class="buscador input-group col-12 d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                            <button class="boton input-group-addon btn btn-buscar" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="col-4 nav-item-end">
+                        <li> <button class="btn "><i class="fas fa-shopping-cart"></i></button> </li>
+                        <li><button class="btn"><i class="far fa-bell"></i></button></li> 
+                        <div class="btn dropdown">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-user"></i>
+                                <strong class="mx-2">Juan Perez</strong>
+                            </a>
+                            <div class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                <li><a class="dropdown-item" href="#">Mis Datos</a></li>
+                                <li><a class="dropdown-item" href="#">Personalización</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                            </div>
+                        </div>
                     </div>
                 </ul>
             </div>

@@ -1,9 +1,37 @@
 nav {
   background-color: white !important;
+  box-shadow: 5px 10px 18px #888888;
 }
 a {
   color: rgb(0, 29, 83);
 }
 input {
   width: 100%;
+  border: none !important;
+  border-bottom: 2px solid #888888 !important;
+}
+.nav-item-end {
+  display: flex;
+}
+.boton {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  margin-right: 10px;
+}
+i {
+  font-size: 20px;
+}
+.buscador {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-brand {
+  margin: auto !important;
+}
+li {
+  margin: 0px 10px;
 }

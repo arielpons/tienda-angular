@@ -1,0 +1,66 @@
+* {
+  float: left;
+}
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+}
+.mat-nav-list {
+  width: 15rem;
+  background-color: rgb(25, 73, 163);
+  height: 100%;
+}
+
+.mat-drawer-container {
+  height: 100% !important;
+}
+.mat-list-item {
+  color: #ffffff !important;
+  font-size: 1rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+  &:hover {
+    color: #f2f5f7 !important;
+  }
+  ::ng-deep {
+    .mat-list-item-content {
+      border-radius: 5px;
+      margin: 0 8px;
+      &:hover {
+        background: #a0b7eb !important;
+      }
+    }
+  }
+}
+.btnsidenav {
+  background-color: #ffffff;
+  color: #000000 !important;
+
+  &:hover {
+    background-color: #fff !important;
+    background: #0000 !important;
+  }
+}
+#collapseExample {
+  background: #fff !important;
+}
+i {
+  color: #fff !important;
+  margin: 0px 100px;
+}
+.arrowbtn {
+  justify-content: space-between !important;
+}
+.list-item-active {
+  color: #f2f5f7 !important;
+  ::ng-deep {
+    .mat-list-item-content {
+      background: #2c3344 !important;
+      &:hover {
+        background: #2c3344 !important;
+      }
+    }
+  }
+}
